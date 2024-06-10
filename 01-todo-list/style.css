@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+}
+.todo-app {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fffff0;
+  margin: 50px auto 20px;
+  padding: 40px 20px 60px;
+  border-radius: 15px;
+  border: 2px solid rgb(40, 40, 40);
+  box-shadow: 3px 3px rgb(40, 40, 40);
+}
+.todo-app h1 {
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  padding-left: 12px;
+  font-family: "Pacifico";
+  text-align: center;
+}
+
+.todo-app img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #ffeea9;
+  border: 1.4px solid black;
+  box-shadow: 2px 2px black;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  height: 60px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 30px;
+  background: #fffff0;
+  border-radius: 10px;
+  border: 1.5px solid black;
+  box-shadow: 1.5px 1.5xp black;
+  margin: 10px 7px 10px 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  height: 40px;
+}
+button:active {
+  box-shadow: inset(2px 2px rgb(0, 0, 0));
+}
+
+ul li {
+  list-style: none;
+  padding: 10px 6px 10px 20px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  font-weight: 600;
+  border: 1.5px solid black;
+  box-shadow: 2px 2px black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  top: 13px;
+  left: 15px;
+}
+
+.checked {
+  color: darkgray;
+  text-decoration: line-through;
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 1px;
+  width: 35px;
+  height: 35px;
+  font-size: 26px;
+  color: black;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
