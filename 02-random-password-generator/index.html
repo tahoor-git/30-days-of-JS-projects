@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Random Password Generator</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="
+text-white
+text-center
+m-auto
+">
+
+   <div class="container
+      bg-cyan-900
+      mt-10
+      w-4/5
+      p-3
+      rounded
+      mx-auto
+      ">
+      <h1 class="font-medium 
+         text-3xl 
+         text-left 
+         "> Generate a <br> <span class="text-green-300 border-b-2 border-green-300 ">
+            Random Password </span>
+      </h1>
+      <div class="display
+         mt-10
+         mb-7
+         bg-white
+         text-teal-800
+         flex
+         items-center
+         justify-between
+         px-10
+         py-5
+         rounded
+         ">
+         <input class="border-none outline-none text-xl" type="text" name="password" id="password"
+            placeholder="Password" readonly>
+         <img onclick="copypass()" class="w-6 cursor-pointer" src="/icons8-copy-48.png" alt="">
+      </div>
+
+      <div class="flex justify-between align-center">
+
+         <button onclick="createpassword()" class="
+         bg-green-600
+         px-6
+         py-2
+         rounded
+         text-white
+         font-light
+         text-left
+         flex
+         mt-4
+         "> Generate Password </button>
+         <button onclick="copypass()" class="
+         bg-blue-600
+         px-6
+         py-2
+         rounded
+         text-white
+         font-light
+         text-left
+         flex
+         mt-4
+         "> Copy Password </button>
+      </div>
+   </div>
+
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script src="script.js"></script>
+</body>
+
+</html>
